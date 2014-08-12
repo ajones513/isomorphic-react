@@ -1,9 +1,9 @@
 {
-  "name": "server-side-react",
+  "name": "isomorphic-react",
   "version": "0.0.1",
   "description": "",
   "main": "server.js",
-  "repository": "ajones513/server-side-react",
+  "repository": "ajones513/isomorphic-react",
   "keywords": [],
   "author": "Andrew Jones",
   "dependencies": {
