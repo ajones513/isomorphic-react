@@ -1,6 +1,6 @@
 requirejs.config({
     'paths': {
-        'react': 'http://fb.me/react-0.11.1.js'           
+        'react': 'http://fb.me/react-0.11.1'           
     }
 });
 
