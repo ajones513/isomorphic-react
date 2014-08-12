@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, Helvetica, freesans, sans-serif;
+}
+
+h3 {
+    margin: 0;
+}
+
+.football-table {
+    border: 2px solid red;
+    padding: 16px 8px;
+}
+
+.table-row {
+    border: 2px solid blue;
+    margin: 8px 0;
+    padding: 16px;
+}
