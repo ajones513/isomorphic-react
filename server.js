@@ -1,5 +1,6 @@
 var express = require('express');
 var React = require('react');
+var ReactDOMServer = require('react-dom/server');
 var requirejs = require('requirejs');
 
 requirejs.config({nodeRequire: require});
@@ -17,12 +18,12 @@ httpServer.get('/', function (request, response) {
         var output = '<link href="/static/styles.css" rel="stylesheet">';
         
         // Getting data
-        var footballTableData = {entries: ['Arsenal', 'Man Utd', 'Man City', 'Sunderland']};
+        var footballTableData = {title: 'Premier League', rows: ['Arsenal', 'Man Utd']};
         
         // Server side HTML rendering
         output += '<div id="ft-1">';
-        output += React.renderComponentToString(
-                      FootballTableComponent(footballTableData)
+        output += ReactDOMServer.renderToString(
+                      React.createElement(FootballTableComponent, footballTableData)
                   );
         output += '</div>';
         
